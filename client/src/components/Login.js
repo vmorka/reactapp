@@ -7,7 +7,8 @@ class Login extends Component {
         <form>
             <input type="text" placeholder="Įveskite el. paštą"/>
             <input type="password" placeholder="Įveskite slaptažodį"/>
-            <input type="submit"/>
+            <button type="submit">Prisijungti</button>
+            <h1>nx</h1>
         </form>
       </div>
     );
