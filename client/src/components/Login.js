@@ -9,7 +9,6 @@ class Login extends Component {
           <input type="text" placeholder="Įveskite el. paštą"/>
           <input type="password" name="pass" placeholder="Įveskite slaptažodį"/>
           <button type="submit">Prisijungti</button>
-          <button type="button">bim | bam</button>
         </form>
       </div>
     );
