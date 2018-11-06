@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const SongSchema = new Schema({
-    songTitle: {
+    name: {
         type: String
     },
-    songArtist: {
+    artist: {
         type: String
     }
 })
