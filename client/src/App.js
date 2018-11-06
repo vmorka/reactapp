@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import Login from './components/Login';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Categories from'./components/Categories';
+import Main from './components/Main'
+import Navbar from './components/Navbar'
 
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -13,11 +13,15 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <Navbar />
           <h1>Muzikos App</h1>
-          <Login />
-          <Categories />
-          <Footer />
+          <Router>
+            <div>
+              <Navbar />
+
+              <Route path="/" component={ Main } exact />
+              <Route path="/login" component={ Login } />
+            </div>
+          </Router>
         </div>
       </Provider>
     );

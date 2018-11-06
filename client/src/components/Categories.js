@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { connect } from 'react-redux';
 import { getCategories } from '../actions/categoryActions';
 import PropTypes from 'prop-types';
@@ -7,9 +6,6 @@ import PropTypes from 'prop-types';
 class Categories extends Component {
   constructor (props) {
     super(props);
-    this.state = {
-      categories: []
-    }
   }
 
   componentDidMount = () => {
