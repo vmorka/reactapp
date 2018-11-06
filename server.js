@@ -8,8 +8,6 @@ const app = express();
 
 // Bodyparser Middleware
 app.use(bodyParser.json());
-  
-
 
 // DB config
 const db = require('./config/keys').mongoURI;
@@ -20,7 +18,6 @@ mongoose.connect(db, { useNewUrlParser: true })
     .catch(err => console.log(err));
 
 //use routes
-
 app.use('/api/songs', songs);
 
 const port = process.env.PORT || 5000;
