@@ -1,0 +1,59 @@
+.login{
+	font: 95% ;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #9C9687;
+}
+.login h1{
+	background: #0008FF;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #FFFFFC;
+	margin: -16px -16px 16px -16px;
+}
+.login input[type="text"],
+.login input[type="password"],
+.login textarea,
+.login select 
+{
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #DBD8D3  ;
+	margin-bottom: 4%;
+	border: 1px solid #171717;
+	padding: 3%;
+	color: #171717;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.login input[type="text"]:focus,
+.login input[type="password"]:focus,
+.login textarea:focus,
+.login select:focus
+{
+	box-shadow: 0 0 5px #5157FF;
+	padding: 3%;
+	border: 1px solid #5157FF;
+}
+
+.login input[type="submit"],
+.login input[type="button"]{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #5157FF;
+	border-bottom: 2px solid #5157FF;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.login input[type="submit"]:hover,
+.login input[type="button"]:hover{
+	background: #0008FF;
+}
