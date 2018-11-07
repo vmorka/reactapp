@@ -33,7 +33,7 @@ router.get('/', function (req, res) {
         });
 
         newMake.save().then(make => res.json(make));
-        res.send('Duomenys issaugoti duomenu bazeje')
+        res.send('Automobiliu markiu duomenys issaugoti duomenu bazeje')
     })
     )
 });

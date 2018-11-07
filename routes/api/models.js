@@ -34,7 +34,7 @@ router.get('/', function (req, res) {
         });
 
         newModel.save().then(model => res.json(model));
-        res.send('Duomenys issaugoti duomenu bazeje')
+        res.send('Automobiliu modeliu duomenys issaugoti duomenu bazeje')
     })
     )
 });

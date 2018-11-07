@@ -3,10 +3,12 @@ const Schema = mongoose.Schema;
 
 const ModelSchema = new Schema({
     Model_Name: {
-        type: String
+        type: String,
+        unique: true
     },
     Model_ID: {
-        type: String
+        type: String,
+        unique: true
     }
 })
 
