@@ -3,9 +3,11 @@ const Schema = mongoose.Schema;
 
 const MakeSchema = new Schema({
     Make_Name: {
+        unique: true,
         type: String
     },
     Make_ID: {
+        unique: true,
         type: String
     }
 })
