@@ -1,9 +1,24 @@
 .App {
+  height: 100%;
+  width: 100%;
+  display:grid;
   text-align: center;
   background: #171717;
-  color: #FFFFFC;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto auto auto ;
+  color: #FFFFFF;
 }
 
-h1{
-  color: #FFFFFC;
+.App > div{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.App > h1{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }

@@ -14,7 +14,8 @@ const makes = [
     'volvo',
     'Volkswagen',
     'Toyota',
-    'Mercedes-Benz'
+    'Mercedes-Benz',
+    'ford'
 ]
 
 router.get('/', function (req, res) {

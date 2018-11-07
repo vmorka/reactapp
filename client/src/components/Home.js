@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Footer from './Footer';
 import { connect } from 'react-redux';
 import { getMakes } from '../actions/makesActions'
+import './styles/Home.css'
 
 class Home extends Component {
   componentDidMount() {
@@ -10,7 +11,7 @@ class Home extends Component {
 
   render() {
     const { makes } = this.props.makes
-    
+
     return (
       <div>
         <h4>Home Component</h4>
