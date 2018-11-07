@@ -41,8 +41,8 @@
 	border: 1px solid #5157FF;
 }
 
-.login input[type="submit"],
-.login input[type="button"]{
+.login button[type="submit"],
+.login button[type="button"]{
 	box-sizing: border-box;
 	width: 100%;
 	padding: 3%;
@@ -53,7 +53,7 @@
 	border-left-style: none;	
 	color: #fff;
 }
-.login input[type="submit"]:hover,
-.login input[type="button"]:hover{
+.login button[type="submit"]:hover,
+.login button[type="button"]:hover{
 	background: #0008FF;
 }

@@ -1,0 +1,15 @@
+/* .footer {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+
+.footer > div {
+    color:#5157FF;
+    background: whitesmoke;
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:4;
+} */
