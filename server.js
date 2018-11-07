@@ -2,7 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-const songs = require('./routes/api/songs');
+const makes = require('./routes/api/makes');
+const models = require('./routes/api/models');
 
 const app = express();
 
@@ -18,7 +19,8 @@ mongoose.connect(db, { useNewUrlParser: true })
     .catch(err => console.log(err));
 
 //use routes
-app.use('/api/songs', songs);
+app.use('/api/makes', makes);
+app.use('/api/models', models);
 
 const port = process.env.PORT || 5000;
 

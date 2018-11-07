@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Login from './components/Login';
-import Main from './components/Main'
+import Home from './components/Home'
 import Navbar from './components/Navbar'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
@@ -17,9 +17,10 @@ class App extends Component {
           <Router>
             <div>
               <Navbar />
-
-              <Route path="/" component={ Main } exact />
-              <Route path="/login" component={ Login } />
+                <div className="container">
+                  <Route exact path="/" component={ Home } />
+                  <Route exact path="/login" component={ Login } />
+                </div>
             </div>
           </Router>
         </div>

@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import categoryReducer from './categoryReducer';
+import makesReducer from './makesReducer';
+import modelsReducer from './modelsReducer';
 
 export default combineReducers({
-  category: categoryReducer
+  makes: makesReducer,
+  models: modelsReducer
 });

@@ -7,7 +7,6 @@ class Navbar extends Component {
       <div className="navbar">
         <Link to="/">Home</Link>
         <Link to="/login">Log In</Link>
-        <Link to="/songs">Songs</Link>
       </div>
     );
   }

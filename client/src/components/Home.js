@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Footer from './Footer';
 
-class Main extends Component {
+class Home extends Component {
   render() {
     return (
       <div>
-        <h4>Main Component</h4>
-        <p>Čia vaizduojamas Main komponentas</p>
+        <h4>Home Component</h4>
+        <p>Čia vaizduojamas Home komponentas</p>
         <Footer />
       </div>
     );
   }
 }
 
-export default Main;
+export default Home;

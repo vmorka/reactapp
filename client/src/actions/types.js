@@ -1,1 +1,2 @@
-export const GET_CATEGORIES = 'GET_CATEGORIES';
+export const GET_MAKES = 'GET_MAKES';
+export const GET_MODELS = 'GET_MODELS';
