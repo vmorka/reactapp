@@ -16,11 +16,11 @@ class Home extends Component {
       <div>
         <h4>Home Component</h4>
         <p>Čia vaizduojamas Home komponentas</p>
-        <ul>
+        <select>
           {makes.map(({Make_ID, Make_Name}) =>
-            <li key={Make_ID}>{Make_Name}</li>
+            <option key={Make_ID}>{Make_Name}</option>
           )}
-        </ul>
+        </select>
         <Footer />
       </div>
     );
