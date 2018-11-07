@@ -1,4 +1,4 @@
-var Songs = require('../models/songs');
+var Songs = require('../models/makes');
 
 'use strict';
 
