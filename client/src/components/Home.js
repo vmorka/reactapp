@@ -10,7 +10,6 @@ class Home extends Component {
 
   render() {
     const { makes } = this.props.makes
-    console.log(makes);
     
     return (
       <div>
