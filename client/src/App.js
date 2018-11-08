@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import Login from './components/Login';
-import Home from './components/Home'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Login from './components/LoginComponent';
+import Select from './components/SelectComponent'
+import Navbar from './components/NavbarComponent'
+import Footer from './components/FooterComponent'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Provider } from 'react-redux';
@@ -19,7 +19,7 @@ class App extends Component {
             <div>
               <Navbar />
                 <div className="container">
-                  <Route exact path="/" component={ Home } />
+                  <Route exact path="/" component={ Select } />
                   <Route exact path="/login" component={ Login } />
                 </div>
             </div>

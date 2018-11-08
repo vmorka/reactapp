@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Navbar.css'
 
-class Navbar extends Component {
+class NavbarComponent extends Component {
   render() {
     return (
       <div className="navbar">
@@ -13,4 +13,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default NavbarComponent;
