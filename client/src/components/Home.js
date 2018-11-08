@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Footer from './Footer';
 import { connect } from 'react-redux';
 import { getMakes } from '../actions/makesActions'
 import './styles/Home.css'
@@ -21,7 +20,6 @@ class Home extends Component {
             <option key={Make_ID}>{Make_Name}</option>
           )}
         </select>
-        <Footer />
       </div>
     );
   }
