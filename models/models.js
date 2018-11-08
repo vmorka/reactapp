@@ -9,6 +9,13 @@ const ModelSchema = new Schema({
     Model_ID: {
         type: String,
         unique: true
+    },
+    Make_ID: {
+        type: String
+    },
+    Make_Name: {
+        type: String,
+        unique: true
     }
 })
 

@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 const db = require('./config/keys').mongoURI;
 
 // Connect to DB
-mongoose.connect(db, { useNewUrlParser: true })
+mongoose.connect(db, { useNewUrlParser: true, useCreateIndex: true })
     .then(() => console.log('MongoDB Prijungta...'))
     .catch(err => console.log(err));
 
