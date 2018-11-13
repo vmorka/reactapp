@@ -8,17 +8,16 @@ const mapStateToProps = (state) => ({
   models: state.models
 })
 
-const mapDispatchToProps = dispatch => ({
-  initialMakes: () => {
-    dispatch(getMakes)
-  },
-  handleOnChange: (e) => {
-    const makeid = e.target.value
-    dispatch(getModels(makeid))
+const mapDispatchToProps = dispatch => {
+  return {
+    initialMakes: () => {
+      dispatch(getMakes)
+    },
+    handleOnChange: (e) => {
+      const makeId = e.target.value
+      dispatch(getModels(makeId))
+    }
   }
-})
+}
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(SelectComponent)
+export default connect(mapStateToProps, mapDispatchToProps)(SelectComponent)
